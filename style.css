@@ -1,0 +1,160 @@
+body {
+    font-family: 'Outfit', sans-serif;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #0d1a2d;
+}
+
+.wrapper {
+    max-width: 20rem;
+    border-radius: 15px;
+    background-color: #15273f;
+    padding: 20px;
+    box-shadow: #0d1a2d;
+}
+
+.img-container {
+    position: relative;
+    width: 100%;
+}
+
+.img3 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.img1 {
+    display: block;
+    width: 100%;
+    border-radius: 15px;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: aqua;
+    border-radius: 15px;
+}
+
+.img-container:hover .overlay{
+    opacity: 0.5;
+}
+
+h1 {
+    display: inline-block;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: white;
+}
+
+.text {
+    font-size: 1.1rem;
+    color: #8fa9ca;
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.price {
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+}
+
+.left {
+    display: flex;
+    align-items: center;
+    color: aqua;
+    gap: 10px;
+}
+
+.right {
+    display: flex;
+    align-items: center;
+    color: gainsboro;
+    gap: 10px;
+}
+
+.time {
+    color: #8fa9ca;
+}
+
+.desc {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-top: 15px;
+    color: #8fa9ca;
+
+}
+
+.portrait {
+    width: 100%;
+    max-width: 35px;
+    height: 100%;
+    max-height: 35px;
+    border: 1px solid white;
+    border-radius: 100%;
+}
+
+.tex1t {
+    color: #8fa9ca;
+}
+
+hr{
+    border: 1px solid #22344c;
+}
+
+h1:hover {
+    color:aqua;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.img1:hover{
+    cursor: pointer;
+
+}
+
+.clk{
+    text-decoration: none;
+    color: white;
+}
+
+.clk:hover {
+    cursor: pointer;
+    color: aqua;
+    transition: 0.5s;
+}
+
+footer{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    color: white;
+}
+
+.author {
+    color: #8fa9ca;
+}
+
+.author-link, .site-link{
+    color: white;
+    text-decoration: none;
+}
+
+.site-link:hover , .author-link:hover {
+    color: aqua;
+    transition: 0.5s;
+}
